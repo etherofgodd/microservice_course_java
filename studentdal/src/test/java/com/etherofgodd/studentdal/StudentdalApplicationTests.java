@@ -27,6 +27,7 @@ class StudentdalApplicationTests {
     @Test
     void testFindStudentById() {
         Student student = studentRepository.findById(1L).get();
+
         System.out.println(student);
     }
 

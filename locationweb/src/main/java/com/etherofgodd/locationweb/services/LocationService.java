@@ -3,12 +3,14 @@ package com.etherofgodd.locationweb.services;
 import com.etherofgodd.locationweb.entities.Location;
 import com.etherofgodd.locationweb.repositories.LocationRepository;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class LocationService implements  ILocation{
+public class LocationService implements ILocation {
+    @Autowired
     private LocationRepository locationRepository;
 
     @Override
@@ -27,8 +29,8 @@ public class LocationService implements  ILocation{
     }
 
     @Override
-    public void deleteLocation(Location location) {
-        locationRepository.delete(location);
+    public void deleteLocation(int id) {
+        locationRepository.deleteById(id);
     }
 
     @Override

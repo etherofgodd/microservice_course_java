@@ -12,7 +12,7 @@ public interface ILocation {
 
     Location getLocationById(int id);
 
-    void deleteLocation(Location location);
+    void deleteLocation(int id);
 
     List<Location> getAllLocations();
 }

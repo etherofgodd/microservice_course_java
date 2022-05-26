@@ -14,5 +14,6 @@ public interface ILocation {
 
     void deleteLocation(int id);
 
+
     List<Location> getAllLocations();
 }

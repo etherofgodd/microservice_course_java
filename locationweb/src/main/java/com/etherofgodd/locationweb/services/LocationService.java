@@ -37,4 +37,6 @@ public class LocationService implements ILocation {
     public List<Location> getAllLocations() {
         return locationRepository.findAll();
     }
+
+
 }
